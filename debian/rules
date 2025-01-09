@@ -4,3 +4,6 @@ include /usr/share/linux-packaging-snippets/kernel-snippet.mk
 
 %:
 	dh $@
+
+out/KERNEL_OBJ/initramfs.gz:
+	cp /buildd/sources/debian/initrd.img-halium-generic $@
