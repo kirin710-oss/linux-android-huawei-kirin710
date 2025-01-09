@@ -344,7 +344,7 @@ include scripts/Kbuild.include
 
 # Make variables (CC, etc...)
 AS		= $(SOURCEANALYZER) $(CROSS_COMPILE)as
-LD		= $(SOURCEANALYZER) $(CROSS_COMPILE)ld
+LD		= $(SOURCEANALYZER) $(CROSS_COMPILE)ld.bfd
 LDGOLD		= $(CROSS_COMPILE)ld.gold
 CC		= $(SOURCEANALYZER) $(CCACHE) $(CROSS_COMPILE)gcc
 CPP		= $(CC) -E
