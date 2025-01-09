@@ -10,6 +10,8 @@ jobs:
   setup:
     executor: continuation/default
     resource_class: small
+    environment:
+      LD: ld.bfd
     steps:
       - droidian-buildd/checkout
       - droidian-buildd/generate
